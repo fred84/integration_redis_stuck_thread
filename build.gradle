@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "2.0.3.RELEASE"
+    id "io.spring.dependency-management" version "1.0.5.RELEASE" apply true
+}
+
+group 'com.github.fred84'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE"
+    compile "org.springframework.integration:spring-integration-redis:5.0.6.RELEASE"
+}
